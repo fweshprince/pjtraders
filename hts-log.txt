@@ -1,0 +1,45 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 26 Mar 2021 05:26:34 at https://profitcoin.ltd +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://profitcoin.ltd -O1 "C:\My Web Sites\Tjeel" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+05:30:29	Error: 	"Forbidden" (403) at link translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2 (from https://profitcoin.ltd/)
+05:31:25	Warning: 	Link https://profitcoin.ltd/cdn-cgi/l/email-protection not scanned (follow robots meta tag)
+05:31:54	Error: 	"Not Found" (404) at link https://profitcoin.ltd/Trident/ (from https://profitcoin.ltd/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=5.5.3)
+05:31:54	Error: 	"Not Found" (404) at link https://profitcoin.ltd/images/transparent.png (from https://profitcoin.ltd/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.2.1)
+05:31:54	Error: 	"Not Found" (404) at link https://profitcoin.ltd/assets/transparent.png (from https://profitcoin.ltd/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.2.1)
+05:31:55	Warning: 	Moved Permanently for https://profitcoin.ltd/origin=https://
+05:31:55	Warning: 	Redirected link is identical because of 'URL Hack' option: https://profitcoin.ltd/origin=https:// and https://profitcoin.ltd/origin=https:/
+05:31:55	Warning: 	File has moved from https://profitcoin.ltd/origin=https:// to https://profitcoin.ltd/origin=https:/
+05:31:55	Warning: 	Moved Permanently for https://profitcoin.ltd/?p=197
+05:31:55	Warning: 	File has moved from https://profitcoin.ltd/?p=197 to https://profitcoin.ltd/about-us/
+05:31:55	Warning: 	Moved Permanently for https://profitcoin.ltd/?p=199
+05:31:55	Warning: 	File has moved from https://profitcoin.ltd/?p=199 to https://profitcoin.ltd/contact-us/
+05:31:55	Warning: 	Moved Permanently for https://profitcoin.ltd/?p=201
+05:31:55	Warning: 	File has moved from https://profitcoin.ltd/?p=201 to https://profitcoin.ltd/terms-and-conditions/
+05:31:56	Warning: 	Moved Permanently for https://profitcoin.ltd/?p=258
+05:31:56	Warning: 	File has moved from https://profitcoin.ltd/?p=258 to https://profitcoin.ltd/register/
+05:31:56	Warning: 	Found for https://profitcoin.ltd/dashboard/
+05:31:56	Warning: 	File has moved from https://profitcoin.ltd/dashboard/ to https://profitcoin.ltd/login/
+05:31:56	Warning: 	Moved Permanently for https://profitcoin.ltd/?p=257
+05:31:56	Warning: 	File has moved from https://profitcoin.ltd/?p=257 to https://profitcoin.ltd/login/
+05:31:56	Warning: 	Found for https://profitcoin.ltd/dashboard/lost-password/
+05:31:56	Warning: 	File has moved from https://profitcoin.ltd/dashboard/lost-password/ to https://profitcoin.ltd/login/
+05:31:56	Warning: 	Moved Permanently for https://profitcoin.ltd/?p=203
+05:31:56	Warning: 	File has moved from https://profitcoin.ltd/?p=203 to https://profitcoin.ltd/privacy-policy/
+05:31:56	Error: 	"Not Found" (404) at link https://profitcoin.ltd/GET (from https://profitcoin.ltd/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/js/particles.min.js?ver=1.0)
+05:31:56	Error: 	"Not Found" (404) at link https://profitcoin.ltd/Error pJS - No image.src (from https://profitcoin.ltd/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/js/particles.min.js?ver=1.0)
+05:31:56	Error: 	"Not Found" (404) at link https://profitcoin.ltd/Version/ (from https://profitcoin.ltd/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/swiper/js/swiper.min.js?ver=4.4.6)
+05:31:57	Error: 	"Not Found" (404) at link https://profitcoin.ltd/version/ (from https://profitcoin.ltd/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/swiper/js/swiper.min.js?ver=4.4.6)
+05:31:57	Error: 	"Not Found" (404) at link https://profitcoin.ltd/edge/ (from https://profitcoin.ltd/wp-content/plugins/premium-cryptocurrency-widgets/assets/js/dist/app.js?ver=2.13.1)
+05:31:57	Error: 	"Not Found" (404) at link https://profitcoin.ltd/giItT1WQy@!-/ (from https://profitcoin.ltd/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-js/lottie.min.js?ver=3.20.9)
+05:31:57	Error: 	"Not Found" (404) at link https://profitcoin.ltd/images/ (from https://profitcoin.ltd/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-js/lottie.min.js?ver=3.20.9)
+05:31:57	Error: 	"Not Found" (404) at link https://profitcoin.ltd/Edge/ (from https://profitcoin.ltd/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6)
+05:31:57	Error: 	"Not Found" (404) at link https://profitcoin.ltd/Gecko/ (from https://profitcoin.ltd/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6)
+05:31:57	Error: 	"Not Found" (404) at link https://profitcoin.ltd/Firefox/ (from https://profitcoin.ltd/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6)
+
+HTTrack Website Copier/3.49-2 mirror complete in 5 minutes 24 seconds : 358 links scanned, 334 files written (24952088 bytes overall) [11637624 bytes received at 35918 bytes/sec], 19428723 bytes transferred using HTTP compression in 230 files, ratio 27%, 14.9 requests per connection
+(14 errors, 20 warnings, 0 messages)
