@@ -647,48 +647,56 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="main-card mb-3 card">
-                                <div class="card-header">Client Deposits
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="align-middle mb-0 table table-borderless table-striped table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>Amount</th>
-                                                <th>Status</th>
-                                                <th>Date</th>
+                        <% plans.forEach((plan)=>{ %>
+                            <div class="col-md-4">
+                                <div class="price-wrapper center basic" style="background-color: rgba(100, 148, 237, 0.596);">
+                                    <div class="content-post">
+                                        <div class="price-header">
+                                            <h3 class="title"><%=`${plan.name}`%></h3>
+                                            <div class="price-number">
+                                                <%=`$${plan.min}`%><span class="price-subprice"> minimum</span>
+        
+                                                <ul style=" margin-top: 20px;">
+                                                    <li><span><i class="fa fa-star"></i></span> <%=`$${plan.min}`%> - <%=`$${plan.max}`%></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="price-content">
+                                            <div class="price-desc">
+                                                <ul>
+        
+                                                    <li><span><i class="fa fa-star"></i></span> <%=`${plan.profit}`%>% Profit</li>
+                                                    <br>
+                                                    <li><span><i class="fa fa-star"></i></span> <%=`$${plan.returns}`%> Daily return</li>
+                                                    <br>
+                                                    
+                                                </ul>
+                                            </div>
+                                            <form action="/tarvixxx/updatePlan" method="POST" style="margin-bottom: 10px">
+                                                <input type="text" class="form-control" style="width: 50%; margin: auto"  value="<%=`${plan.name}`%>" id="amountInput" name="name" required />
                                                 
-                                                <th>Action</th>
+                                                <input type="number" class="form-control" style="width: 50%; margin: auto"  value="<%=`${plan.min}`%>" id="amountInput" name="min" required />
+                                                
+                                                <input type="number" class="form-control" style="width: 50%; margin: auto"  value="<%=`${plan.max}`%>" id="amountInput" name="max" required />
+                                                
+                                                <input type="number" class="form-control" style="width: 50%; margin: auto"  value="<%=`${plan.profit}`%>" id="amountInput" name="profit" required />
 
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <% deposits.forEach((deposit)=>{ %>
-                                                <tr>
-                                                    <th scope="row"><%=`${deposit.amount}`%></th>
-                                                    <td>
-                                                        <%=`${deposit.status}`%>
-                                                    </td>
-                                                    <td>
-                                                        <%=`${deposit.createdAt.toString().slice(0,15)}`%>
-                                                    </td>
-                                                    
-                                                    
-                                                    
-                                                    <td class="text-center">
-                                                        <button type="button" id="PopoverCustomT-1" class="btn btn-success btn-sm profit profitModalBtn" data-userId="<%=`${deposit.id}`%>">Confirm</button>
-                                                    </td>
-                                                </tr>
-                                                <% }) %>
+                                                <input type="number" class="form-control" style="width: 50%; margin: auto"  value="<%=`${plan.returns}`%>" id="amountInput" name="returns" required />
 
-
-                                        </tbody>
-                                    </table>
+            
+                                                <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput" value="<%= `${plan._id}` %>" name="planId" />
+            
+                                                <input style="margin: 10px; border: none" class="see-brd-btn" type="submit" value="Update" />
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- ./content-post -->
                                 </div>
+                                <!-- /.price-wrapper -->
                             </div>
-                        </div>
-
+                            <br>
+                            <br>
+                            <% }) %>                  
                     </div>
                 </div>
             </div>

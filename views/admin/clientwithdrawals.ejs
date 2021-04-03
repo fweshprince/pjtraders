@@ -565,7 +565,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="forms-controls">
+                                <a href="investmentplans">
                                     <i class="metismenu-icon pe-7s-mouse">
                                     </i>Investment plans
                                 </a>
@@ -648,55 +648,63 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-md-12">
                             <div class="main-card mb-3 card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Table responsive</h5>
-                                    <div class="table-responsive">
-                                        <table class="mb-0 table">
-                                            <thead>
+                                <div class="table-responsive">
+                                    <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                        <thead>
+                                           
+                                        </thead>
+                                        <tbody>
+                                             <div class="row">
+                        <div class="col-md-12">
+                            <div class="main-card mb-3 card">
+                                <div class="card-header">Client Withdrawals
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Amount</th>
+                                                <th>Status</th>
+                                                <th>Mode</th>
+                                                
+                                                <th>Date</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <% withdrawals.forEach((withdrawal)=>{ %>
                                                 <tr>
-
-                                                    <th>ID</th>
-                                                    <th>Client name</th>
-                                                    <th>Amount requested</th>
-                                                    <th>Amount + charges</th>
-                                                    <th>Payment mode</th>
-                                                    <th>Receivers email</th>
-                                                    <th>Status</th>
-                                                    <th>Date created</th>
-                                                    <th>Option</th>
-
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">1</th>
-
-                                                    <td>Table cell</td>
-                                                    <td>Table cell</td>
-                                                    <td>Table cell</td>
-                                                    <td>Table cell</td>
-                                                    <td>Table cell</td>
-                                                    <td>Table cell</td>
-                                                    <td>Table cell</td>
-                                                    <td class="text-center">
-                                                        <button type="button" id="PopoverCustomT-1"
-                                                            class="btn btn-dark btn-sm">Process</button>
+                                                    <th scope="row"><%=`${withdrawal.amountRequested}`%></th>
+                                                    <td>
+                                                        <%=`${withdrawal.status}`%>
                                                     </td>
-                                                    <td class="text-center">
-                                                        <button type="button" id="PopoverCustomT-1"
-                                                            class="btn btn-light btn-sm"><i class="fa fa-fw"
-                                                                aria-hidden="true"
-                                                                title="Copy to use eye"></i>View</button>
+                                                    <td>
+                                                        <%=`${withdrawal.paymentMode}`%>
+                                                    </td>
+                                                    <td>
+                                                        <%=`${withdrawal.createdAt.toString().slice(0,15)}`%>
                                                     </td>
                                                 </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                                <% }) %>
+
+
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
+
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
