@@ -14,7 +14,7 @@ const PlanSchema = new Schema(
     profit: {
       type: Number,
     },
-    returns: {
+    hours: {
       type: Number,
     },
   },

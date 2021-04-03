@@ -667,7 +667,7 @@
         
                                                     <li><span><i class="fa fa-star"></i></span> <%=`${plan.profit}`%>% Profit</li>
                                                     <br>
-                                                    <li><span><i class="fa fa-star"></i></span> <%=`$${plan.returns}`%> Daily return</li>
+                                                    <li><span><i class="fa fa-star"></i></span> <%=`${plan.hours}`%> Daily return</li>
                                                     <br>
                                                     
                                                 </ul>
@@ -681,7 +681,7 @@
                                                 
                                                 <input type="number" class="form-control" style="width: 50%; margin: auto"  value="<%=`${plan.profit}`%>" id="amountInput" name="profit" required />
 
-                                                <input type="number" class="form-control" style="width: 50%; margin: auto"  value="<%=`${plan.returns}`%>" id="amountInput" name="returns" required />
+                                                <input type="number" class="form-control" style="width: 50%; margin: auto"  value="<%=`${plan.hours}`%>" id="amountInput" name="returns" required />
 
             
                                                 <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput" value="<%= `${plan._id}` %>" name="planId" />
