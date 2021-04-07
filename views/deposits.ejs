@@ -634,7 +634,7 @@
     <script type="text/javascript " src="javascript/main.js "></script>
     <script>
         const amountInput = document.getElementById("amountInput");
-        const amountDisplays = document.getElementsByClassName("amountDisplay");
+        const amountDisplays = document.querySelectorAll(".amountDisplay");
         amountInput.addEventListener("input", (e) => {
             e.preventDefault()
             amountDisplays.forEach(amountDisplay => {
