@@ -177,7 +177,7 @@
               <h5><strong>Bitcoin</strong></h5>
               <div class="container" style="margin-top: 35px; width: 80%;">
                   <h4>
-                      <strong>You are to send $<span id="amountDisplay">0</span> to the below Bitcoin address</strong>
+                      <strong>You are to send $<span class="amountDisplay">0</span> to the below Bitcoin address</strong>
                   </h4>
               </div>
               <div class="container-fluid animatedParent" style="
@@ -230,7 +230,7 @@
             <h5><strong>Dash</strong></h5>
             <div class="container" style="margin-top: 35px; width: 80%;">
                 <h4>
-                    <strong>You are to send $<span id="amountDisplay">0</span> to the below Dash address</strong>
+                    <strong>You are to send $<span class="amountDisplay">0</span> to the below Dash address</strong>
                 </h4>
             </div>
             <div class="container-fluid animatedParent" style="
@@ -285,7 +285,7 @@
             <h5><strong>Doge</strong></h5>
             <div class="container" style="margin-top: 35px; width: 80%;">
                 <h4>
-                    <strong>You are to send $<span id="amountDisplay">0</span> to the below Doge address</strong>
+                    <strong>You are to send $<span class="amountDisplay">0</span> to the below Doge address</strong>
                 </h4>
             </div>
             <div class="container-fluid animatedParent" style="
@@ -340,7 +340,7 @@
             <h5><strong>Ethereum</strong></h5>
             <div class="container" style="margin-top: 35px; width: 80%;">
                 <h4>
-                    <strong>You are to send $<span id="amountDisplay">0</span> to the below Ethereum address</strong>
+                    <strong>You are to send $<span class="amountDisplay">0</span> to the below Ethereum address</strong>
                 </h4>
             </div>
             <div class="container-fluid animatedParent" style="
@@ -395,7 +395,7 @@
             <h5><strong>Litecoin</strong></h5>
             <div class="container" style="margin-top: 35px; width: 80%;">
                 <h4>
-                    <strong>You are to send $<span id="amountDisplay">0</span> to the below Litecoin address</strong>
+                    <strong>You are to send $<span class="amountDisplay">0</span> to the below Litecoin address</strong>
                 </h4>
             </div>
             <div class="container-fluid animatedParent" style="
@@ -450,7 +450,7 @@
             <h5><strong>Paypal</strong></h5>
             <div class="container" style="margin-top: 35px; width: 80%;">
                 <h4>
-                    <strong>You are to send $<span id="amountDisplay">0</span> to the below Paypal address</strong>
+                    <strong>You are to send $<span class="amountDisplay">0</span> to the below Paypal address</strong>
                 </h4>
             </div>
             <div class="container-fluid animatedParent" style="
@@ -505,7 +505,7 @@
             <h5><strong>Perfectmoney</strong></h5>
             <div class="container" style="margin-top: 35px; width: 80%;">
                 <h4>
-                    <strong>You are to send $<span id="amountDisplay">0</span> to the below Perfectmoney address</strong>
+                    <strong>You are to send $<span class="amountDisplay">0</span> to the below Perfectmoney address</strong>
                 </h4>
             </div>
             <div class="container-fluid animatedParent" style="
@@ -560,7 +560,7 @@
             <h5><strong>Bitcoin cash</strong></h5>
             <div class="container" style="margin-top: 35px; width: 80%;">
                 <h4>
-                    <strong>You are to send $<span id="amountDisplay">0</span> to the below Bitcoin cash address</strong>
+                    <strong>You are to send $<span class="amountDisplay">0</span> to the below Bitcoin cash address</strong>
                 </h4>
             </div>
             <div class="container-fluid animatedParent" style="
@@ -634,11 +634,14 @@
     <script type="text/javascript " src="javascript/main.js "></script>
     <script>
         const amountInput = document.getElementById("amountInput");
-        const amountDisplay = document.getElementById("amountDisplay");
+        const amountDisplays = document.getElementsByClassName("amountDisplay");
         amountInput.addEventListener("input", (e) => {
             e.preventDefault()
-            amountDisplay.innerHTML = amountInput.value || 0
+            amountDisplays.forEach(amountDisplay => {
+                amountDisplay.innerHTML = amountInput.value || 0
+                })
         });
+        
 
         function copyToClipboard(element) {
             var $temp = $("<input>");
