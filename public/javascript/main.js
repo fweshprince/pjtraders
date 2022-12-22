@@ -513,13 +513,13 @@
 
     var retinaLogos = function() {
       var retina = window.devicePixelRatio > 1 ? true : false;
-        if(retina) {
-            $('.logo').find('img').attr({src:'./img/homelogo1.jpg',width:'135',height:'24'}); 
-        }
+        // if(retina) {
+        //     $('.logo').find('img').attr({src:'./img/homelogo1.jpg',width:'135',height:'24'}); 
+        // }
 
-        if(retina) {
-            $('#logo-ft').find('img').attr({src:'./img/homelogo1.jpg',width:'135',height:'24'}); 
-        }
+        // if(retina) {
+        //     $('#logo-ft').find('img').attr({src:'./img/homelogo1.jpg',width:'135',height:'24'}); 
+        // }
     }; 
 
     var removePreloader = function() {        
