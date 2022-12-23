@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class="container">
-                <h2 style="font-size: 2.5em">Your deposits</h2>
+                <h2 style="font-size: 2.5em; color: rgba(219, 219, 219, 0.842); margin-top: 10px; margin-bottom: 10px;">Your deposits</h2>
                 <% if(deposits.length > 0) { %>
                     <table id="table">
                         <thead>
@@ -98,15 +98,15 @@
                         </tbody>
                     </table>
                     <% } else { %>
-                        <div style="background-color: cornsilk">
-                            <h4>No deposits made yet</h4>
+                        <div style="background-color: rgb(255, 89, 89)">
+                            <h4>No deposits made yet!</h4>
                             <strong><a href="deposit" style="color:blue; text-decoration: underline;">Fund account now</a></strong>
                         </div>
                         <% } %>
             </div>
             <div class="container">
                 <br>
-                <h2 style="font-size: 2.5em">Make a deposit</h2>
+                <h2 style="font-size: 2.5em; color: rgba(219, 219, 219, 0.842);">Make a deposit</h2>
                 <br>
                 <input type="number" class="form-control" style="max-width: 200px; margin-top: 20px; margin-left: 9vw;" placeholder="Input deposit amount" id="amountInput">
                 
@@ -121,9 +121,9 @@
             margin-top: 15px;
             margin-bottom: 25px
           ">
-              <h5><strong>Bitcoin</strong></h5>
+              <h5 style="color: rgba(219, 219, 219, 0.842);"><strong>Bitcoin</strong></h5>
               <div class="container" style="margin-top: 35px; width: 80%;">
-                  <h4>
+                  <h4 style="color: rgba(219, 219, 219, 0.842);">
                       <strong>You are to send $<span class="amountDisplay">0</span> to the below Bitcoin address</strong>
                   </h4>
               </div>
