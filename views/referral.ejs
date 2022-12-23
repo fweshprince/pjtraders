@@ -49,12 +49,12 @@
                 <div class="row animatedParent">
                     <div class="col-xl-9 col-lg-9 col-12 animated bounceInLeft">
                         <p style="color: #561313;"><strong>Referral link: 
-                                <%= `https://capitalreturns.herokuapp.com/sign-up?referrer=${user.username}` %></strong></p>
+                                <%= `https://pjtraders-dex.onrender.com/sign-up?referrer=${user.username}` %></strong></p>
                     </div>
                 </div>
             </div>
             <div class="container">
-                <h2 style="font-size: 2.5em">Your referrals</h2>
+                <h2 style="font-size: 2.5em; color: rgba(219, 219, 219, 0.842); margin-top: 10px; margin-bottom: 10px;">Your referrals</h2>
                 <% if(referrals.length > 0) { %>
                     <table id="table">
                         <thead>
@@ -83,7 +83,7 @@
                         </tbody>
                     </table>
                     <% } else { %>
-                        <div style="background-color: cornsilk">
+                        <div style="background-color: rgb(255, 89, 89); padding: 10px;">
                             <h4>You have no active referrals yet</h4>
                         </div>
                         <% } %>
