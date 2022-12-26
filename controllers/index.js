@@ -226,7 +226,7 @@ exports.postsignup = asyncHandler(async (req, res, next) => {
 // @desc Logs a user in
 // @access public
 exports.postsignin = asyncHandler(async (req, res, next) => {
-  console.log("working");
+  // console.log("working");
   passport.authenticate("local", {
     successRedirect: "/dashboard",
     failureRedirect: "/login",
